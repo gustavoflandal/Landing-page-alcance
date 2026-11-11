@@ -1,0 +1,25 @@
+# A landing sobe num contêiner próprio e entra na rede do Caddy que já atende
+# 80/443 na VPS. A porta local (8092) existe só para testar de dentro do
+# servidor; quem publica para fora é o Caddy. A 8090 é do pdv-lev-landing e a
+# 8091 é do syncrofin-enterprise-landing.
+services:
+  alcance-landing:
+    build: .
+    image: alcance-landing:latest
+    container_name: alcance-landing
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8092:80"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - default
+      - proxy
+
+networks:
+  proxy:
+    external: true
+    name: syncrofin-pessoal_default

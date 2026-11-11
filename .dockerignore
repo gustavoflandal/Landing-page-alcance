@@ -1,0 +1,7 @@
+.git
+.gitattributes
+.dockerignore
+docker-compose.yml
+Dockerfile
+README.md
+DEPLOY.md

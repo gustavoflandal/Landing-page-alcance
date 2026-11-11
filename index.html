@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alcance — registro pedagógico por objetivos de aprendizagem</title>
+    <meta
+      name="description"
+      content="Chamada, conteúdo diário, avaliação por objetivo, boletim e análise pedagógica em um sistema só. O Alcance substitui a planilha da professora sem mudar o método dela."
+    />
+    <link rel="canonical" href="https://syncrofin.com.br/alcance/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icone-512.png" />
+    <meta name="theme-color" content="#0e6e72" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Alcance" />
+    <meta property="og:title" content="Alcance — cada objetivo, cada aluno, cada dia" />
+    <meta
+      property="og:description"
+      content="Registro pedagógico por objetivos de aprendizagem para escolas de ensino fundamental."
+    />
+    <meta property="og:url" content="https://syncrofin.com.br/alcance/" />
+    <meta property="og:image" content="https://syncrofin.com.br/alcance/icone-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="cabecalho">
+      <a class="cabecalho__marca" href="#topo" aria-label="Alcance, início da página">
+        <picture>
+          <source srcset="logo-escuro.svg" media="(prefers-color-scheme: dark)" />
+          <img src="logo-claro.svg" alt="Alcance" width="268" height="64" />
+        </picture>
+      </a>
+      <nav aria-label="Seções da página">
+        <a href="#problema">Por que existe</a>
+        <a href="#recursos">O que faz</a>
+        <a href="#telas">Telas</a>
+        <a href="#entrega">Entrega</a>
+        <a class="destaque" href="#contato">Falar com a equipe</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <!-- ------------------------------------------------------------ hero -->
+      <section class="hero faixa" id="topo">
+        <picture>
+          <source srcset="simbolo-escuro.svg" media="(prefers-color-scheme: dark)" />
+          <img class="hero__grade" src="simbolo-claro.svg" alt="" aria-hidden="true" />
+        </picture>
+        <div class="hero__interior">
+          <p class="hero__assinatura">Cada objetivo, cada aluno, cada dia.</p>
+          <h1>O registro pedagógico que a professora já faz, sem a planilha.</h1>
+          <p class="hero__linha">
+            O <strong>Alcance</strong> reúne chamada, conteúdo diário, avaliação por objetivo de
+            aprendizagem, anexos de evidência, médias, boletim e análise pedagógica em um sistema
+            web multiusuário — preservando o método de trabalho de quem já avalia por objetivos.
+          </p>
+          <div class="hero__acoes">
+            <a class="destaque" href="#telas">Ver as telas do sistema</a>
+            <a class="botao-secundario" href="#problema">Entender o problema</a>
+          </div>
+          <dl class="hero__numeros">
+            <div>
+              <dt>Chamada do dia</dt>
+              <dd>em até 30 s</dd>
+            </div>
+            <div>
+              <dt>Nota</dt>
+              <dd>sempre calculada</dd>
+            </div>
+            <div>
+              <dt>Avaliação</dt>
+              <dd>objetivos ou provas</dd>
+            </div>
+            <div>
+              <dt>Entrega</dt>
+              <dd>uma instância por escola</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------- problema -->
+      <section class="faixa" id="problema">
+        <div class="interior">
+          <div class="secao__cabeca">
+            <h2 class="secao__titulo">A planilha funciona — até o dia em que não funciona</h2>
+            <p class="secao__linha">
+              O Alcance nasceu de uma planilha de chamada e avaliação real, em uso numa turma de
+              ensino fundamental. Ela dá conta do método, mas carrega três defeitos que nenhum
+              cuidado da professora resolve.
+            </p>
+          </div>
+
+          <div class="comparativo">
+            <article>
+              <h3>1. Quebra de referência</h3>
+              <p class="antes">
+                <span class="rotulo">Planilha</span>
+                <span>Excluir a linha de um aluno corrompe médias e boletim em silêncio.</span>
+              </p>
+              <p class="depois">
+                <span class="rotulo">Alcance</span>
+                <span
+                  >Cada avaliação se liga ao aluno e ao objetivo por identificador, nunca por
+                  posição. Quem sai da turma é desativado, e o histórico permanece.</span
+                >
+              </p>
+            </article>
+
+            <article>
+              <h3>2. Nota sem contexto</h3>
+              <p class="antes">
+                <span class="rotulo">Planilha</span>
+                <span>Uma célula vazia pode ser "não atingiu" ou "ainda não avaliei".</span>
+              </p>
+              <p class="depois">
+                <span class="rotulo">Alcance</span>
+                <span
+                  >Três estados distintos, a cobertura do bimestre ao lado da nota e o critério de
+                  cálculo escolhido pela escola — com o padrão igual ao da planilha de origem.</span
+                >
+              </p>
+            </article>
+
+            <article>
+              <h3>3. Uso individual</h3>
+              <p class="antes">
+                <span class="rotulo">Planilha</span>
+                <span>Um arquivo, um computador, nenhuma trilha de quem mudou o quê.</span>
+              </p>
+              <p class="depois">
+                <span class="rotulo">Alcance</span>
+                <span
+                  >Acesso simultâneo, cada professor enxergando só as suas turmas e disciplinas,
+                  com auditoria de toda alteração e cópia de segurança.</span
+                >
+              </p>
+            </article>
+          </div>
+
+          <div class="estados">
+            <span class="celula celula--a"><b>A</b> objetivo atingido</span>
+            <span class="celula celula--na"><b>NA</b> a retomar, em âmbar — não é erro a punir</span>
+            <span class="celula celula--nav"><b>NAV</b> ainda não avaliado, ausência de dado</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------- recursos -->
+      <section class="faixa" id="recursos">
+        <div class="interior">
+          <div class="secao__cabeca">
+            <h2 class="secao__titulo">O que o sistema faz</h2>
+            <p class="secao__linha">
+              A Fase 1 cobre o ciclo inteiro do registro pedagógico, da chamada da manhã ao boletim
+              do fim do bimestre.
+            </p>
+          </div>
+
+          <div class="cartoes">
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">P</span>
+              <h3>Chamada em um toque</h3>
+              <p>
+                "Todos presentes" e depois só as exceções, com justificativa de falta e salvamento
+                automático. Dia não letivo aparece explicado, não como erro.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">C</span>
+              <h3>Conteúdo diário</h3>
+              <p>
+                O que foi trabalhado em cada data, por disciplina, com busca que ignora acento — e
+                é dali que nascem os objetivos de aprendizagem.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">A</span>
+              <h3>Objetivos e avaliação</h3>
+              <p>
+                Cadastro individual ou em lote, reordenação e desativação. A grade objetivo × aluno
+                marca A, NA ou NAV com a letra sempre visível na célula.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">N</span>
+              <h3>Nota derivada, nunca digitada</h3>
+              <p>
+                A nota vem da contagem de objetivos ou dos instrumentos avaliativos, calculada num
+                único lugar. Tela, boletim e relatório consomem o mesmo cálculo.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">≡</span>
+              <h3>Prova, objetivo ou os dois</h3>
+              <p>
+                A escola que avalia por nota de prova usa instrumentos; a que avalia por objetivos
+                usa a grade; a que faz as duas coisas combina as modalidades.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">@</span>
+              <h3>Evidências anexadas</h3>
+              <p>
+                Fotos e documentos ligados ao objetivo e à turma, servidos só por endpoint
+                autenticado que confere o vínculo do usuário.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">%</span>
+              <h3>Médias, boletim e alertas</h3>
+              <p>
+                Quadro de médias da turma, boletim individual em tela e em PDF, e alertas de
+                objetivo crítico, cobertura baixa e frequência em risco.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">⇄</span>
+              <h3>Contraturno</h3>
+              <p>
+                Atividades, matrículas e presença das turmas de contraturno, separadas do registro
+                pedagógico regular.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <span class="cartao__marca" aria-hidden="true">↥</span>
+              <h3>Carga da planilha atual</h3>
+              <p>
+                Um extrator lê a planilha do ano corrente e carrega turma, alunos, chamada e
+                avaliações, conferindo as notas já apuradas uma a uma.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------ telas -->
+      <section class="faixa telas" id="telas">
+        <div class="interior">
+          <div class="secao__cabeca">
+            <h2 class="secao__titulo">As telas, como elas são hoje</h2>
+            <p class="secao__linha">
+              Capturas do sistema em funcionamento, geradas automaticamente a cada entrega.
+              Clique em qualquer uma para ampliar; as setas do teclado percorrem o catálogo.
+            </p>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Chamada e conteúdo</h3>
+              <span>o dia a dia da sala</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="chamada-do-dia">
+                  <img
+                    src="img/miniaturas/chamada-do-dia.webp"
+                    alt="Chamada do dia da turma 4ºB, ainda sem marcação"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Chamada do dia</strong>
+                    <span
+                      >Cartões grandes com número, nome e estado por extenso. "Todos presentes" e
+                      só as exceções.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="chamada-justificativa">
+                  <img
+                    src="img/miniaturas/chamada-justificativa.webp"
+                    alt="Chamada com o campo de justificativa de falta aberto"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Falta justificada</strong>
+                    <span>O motivo é obrigatório e fica registrado junto da falta.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="grade-mensal-chamada">
+                  <img
+                    src="img/miniaturas/grade-mensal-chamada.webp"
+                    alt="Grade mensal de chamada, aluno por dia"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Grade mensal</strong>
+                    <span
+                      >Aluno × dia com a letra em cada célula, primeira coluna fixa e contagens
+                      vindas do servidor.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="conteudo-diario">
+                  <img
+                    src="img/miniaturas/conteudo-diario.webp"
+                    alt="Lista de conteúdos do bimestre por disciplina"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Conteúdo diário</strong>
+                    <span>Conteúdos do bimestre com busca sem acento e disciplinas marcadas.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="painel-pendencias">
+                  <img
+                    src="img/miniaturas/painel-pendencias.webp"
+                    alt="Painel da regente com as aulas sem chamada ou sem conteúdo"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Painel de pendências</strong>
+                    <span>Aulas sem chamada lançada ou sem conteúdo, da mais recente para trás.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="grade-horaria">
+                  <img
+                    src="img/miniaturas/grade-horaria.webp"
+                    alt="Grade horária da turma por dia da semana e aula"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Grade horária</strong>
+                    <span
+                      >Dia × aula com disciplina e professor. A coordenação versiona; o professor
+                      consulta.</span
+                    >
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Objetivos e avaliação</h3>
+              <span>o coração do método</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="objetivos-disciplina">
+                  <img
+                    src="img/miniaturas/objetivos-disciplina.webp"
+                    alt="Objetivos da disciplina com taxa de êxito por objetivo"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Objetivos da disciplina</strong>
+                    <span>Conteúdos do bimestre, objetivos vinculados e taxa de êxito de cada um.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="objetivo-a-partir-conteudo">
+                  <img
+                    src="img/miniaturas/objetivo-a-partir-conteudo.webp"
+                    alt="Cadastro de objetivo a partir de um conteúdo"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Objetivo a partir do conteúdo</strong>
+                    <span>O cadastro abre já com o conteúdo de origem preenchido.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="grade-avaliacao">
+                  <img
+                    src="img/miniaturas/grade-avaliacao.webp"
+                    alt="Grade de avaliação objetivo por aluno, com células A, NA e NAV"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Grade de avaliação</strong>
+                    <span
+                      >Objetivo × aluno, com a letra sempre visível, linha de nota e coluna de
+                      êxito.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="painel-encerramento">
+                  <img
+                    src="img/miniaturas/painel-encerramento.webp"
+                    alt="Painel de encerramento do bimestre com pendências"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Encerramento do bimestre</strong>
+                    <span
+                      >O bimestre só fecha depois de resolver todo objetivo que ainda tem aluno
+                      sem avaliação.</span
+                    >
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Evidências</h3>
+              <span>o que sustenta a avaliação</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="anexos-objetivo">
+                  <img
+                    src="img/miniaturas/anexos-objetivo.webp"
+                    alt="Objetivo com galeria de anexos expandida"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Anexos no objetivo</strong>
+                    <span>Fotos e documentos de evidência ligados ao objetivo avaliado.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="arquivos-turma">
+                  <img
+                    src="img/miniaturas/arquivos-turma.webp"
+                    alt="Arquivos da turma organizados por categoria"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Arquivos da turma</strong>
+                    <span>Calendário, cronograma e demais documentos, organizados por categoria.</span>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Resultado e análise</h3>
+              <span>o que a coordenação olha</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="quadro-medias">
+                  <img
+                    src="img/miniaturas/quadro-medias.webp"
+                    alt="Quadro de médias da turma por aluno e disciplina"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Quadro de médias</strong>
+                    <span
+                      >Aluno × disciplina com notas por bimestre, média anual e situação. Sem dado
+                      exibe "—", nunca zero.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="boletim">
+                  <img
+                    src="img/miniaturas/boletim.webp"
+                    alt="Boletim individual do aluno"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Boletim individual</strong>
+                    <span>Notas, faltas com as justificadas destacadas, frequência e resultado.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="painel-alertas">
+                  <img
+                    src="img/miniaturas/painel-alertas.webp"
+                    alt="Painel inicial com alertas pedagógicos"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Alertas pedagógicos</strong>
+                    <span>Objetivo crítico, cobertura baixa e frequência em risco, com link de ação.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="painel-performance">
+                  <img
+                    src="img/miniaturas/painel-performance.webp"
+                    alt="Painel de performance com quatro gráficos"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Painel de performance</strong>
+                    <span
+                      >Médias por disciplina, situação dos alunos, evolução bimestral, frequência e
+                      cobertura.</span
+                    >
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Contraturno</h3>
+              <span>fora do horário regular</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="contraturno-atividades">
+                  <img
+                    src="img/miniaturas/contraturno-atividades.webp"
+                    alt="Lista de atividades de contraturno"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Atividades</strong>
+                    <span>Horário, dias e situação de cada atividade, cadastradas pela coordenação.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="contraturno-presenca">
+                  <img
+                    src="img/miniaturas/contraturno-presenca.webp"
+                    alt="Grade de presença de um encontro de contraturno"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Presença do encontro</strong>
+                    <span>Presença por aluno no encontro, lançada pelo instrutor da atividade.</span>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grupo">
+            <div class="grupo__titulo">
+              <h3>Escola, turmas e critérios</h3>
+              <span>o que a direção configura</span>
+            </div>
+            <ul class="galeria">
+              <li>
+                <button class="tela" type="button" data-tela="parametros-calculo">
+                  <img
+                    src="img/miniaturas/parametros-calculo.webp"
+                    alt="Tela de dados da escola e parâmetros de cálculo"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Parâmetros de cálculo</strong>
+                    <span
+                      >Os critérios da escola, explicados em linguagem de professora — não em
+                      fórmula.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="turmas-vinculos">
+                  <img
+                    src="img/miniaturas/turmas-vinculos.webp"
+                    alt="Turmas com regente e turmas por disciplina"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Turmas e vínculos</strong>
+                    <span
+                      >Turma com regente ou por disciplina, com cada professor ligado às suas
+                      disciplinas.</span
+                    >
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="calendario-turma">
+                  <img
+                    src="img/miniaturas/calendario-turma.webp"
+                    alt="Calendário da turma com dias letivos e não letivos"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Calendário da turma</strong>
+                    <span>Dias letivos do bimestre e totais contra o previsto.</span>
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button class="tela" type="button" data-tela="amostra-estados">
+                  <img
+                    src="img/miniaturas/amostra-estados.webp"
+                    alt="Amostra de todas as células de estado do sistema"
+                    width="512"
+                    height="384"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tela__texto">
+                    <strong>Amostra dos estados</strong>
+                    <span
+                      >Toda célula traz a letra além da cor, com contraste verificado nos dois
+                      temas.</span
+                    >
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <p class="aviso-dados">
+            Todas as telas usam <strong>dados fictícios</strong> do banco de demonstração. Nenhum
+            dado real de aluno aparece nesta página.
+          </p>
+        </div>
+      </section>
+
+      <!-- --------------------------------------------------------- entrega -->
+      <section class="faixa" id="entrega">
+        <div class="interior">
+          <div class="secao__cabeca">
+            <h2 class="secao__titulo">Como o Alcance chega na escola</h2>
+            <p class="secao__linha">
+              Uma instância por escola, entregue em contêineres. A escola decide onde hospedar: na
+              máquina da secretaria, num servidor próprio ou num provedor de nuvem.
+            </p>
+          </div>
+
+          <div class="entrega">
+            <div>
+              <table class="pilha">
+                <caption class="pilha__titulo">Tecnologia</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">Banco de dados</th>
+                    <td>PostgreSQL 16</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Aplicação</th>
+                    <td>Go</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Interface</th>
+                    <td>React e TypeScript</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Implantação</th>
+                    <td>Docker, com proxy e TLS</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Idioma</th>
+                    <td>Português do Brasil, do botão à mensagem de erro</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div>
+              <span class="cartao__marca" aria-hidden="true">✓</span>
+              <h3 class="bloco__titulo">Decisões que não são negociáveis</h3>
+              <ul class="lista-seca">
+                <li>
+                  <strong>A nota é sempre calculada.</strong> Ninguém digita nota, em lugar nenhum
+                  do sistema.
+                </li>
+                <li>
+                  <strong>Cada professor vê só o que é dele.</strong> O vínculo com a turma e a
+                  disciplina é verificado no servidor, nunca no navegador.
+                </li>
+                <li>
+                  <strong>Toda alteração fica registrada.</strong> Quem mudou, quando, o valor
+                  anterior e o novo.
+                </li>
+                <li>
+                  <strong>Aluno nunca é apagado.</strong> Quem sai da turma é desativado e o
+                  histórico fica de pé.
+                </li>
+                <li>
+                  <strong>A cor nunca carrega sozinha o significado.</strong> Toda célula traz a
+                  letra, e o boletim continua legível impresso em preto e branco.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="cartao__marca" aria-hidden="true">§</span>
+              <h3 class="bloco__titulo">Dados de crianças, pela LGPD</h3>
+              <ul class="lista-seca">
+                <li>
+                  Anexo nenhum é servido por caminho direto: todo acesso passa por verificação de
+                  sessão e de vínculo.
+                </li>
+                <li>
+                  Exportações levam marca de confidencialidade e ficam registradas na auditoria.
+                </li>
+                <li>
+                  O especialista de disciplina consulta a turma sem enxergar os contatos dos
+                  responsáveis.
+                </li>
+                <li>
+                  Toda decisão de projeto segue a Lei 13.709/2018, no melhor interesse do menor.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------------- contato -->
+      <section class="faixa chamada-final" id="contato">
+        <div class="interior">
+          <h2 class="secao__titulo secao__titulo--centro">Quer ver funcionando na sua escola?</h2>
+          <p>
+            O Alcance está em desenvolvimento, com a Fase 1 — substituir a planilha — prevista
+            para o início do ano letivo de 2027. Uma demonstração com dados fictícios pode ser
+            agendada desde já, e a carga da planilha do ano corrente é feita junto da implantação.
+          </p>
+          <div class="hero__acoes">
+            <a class="destaque" href="mailto:contato@syncrofin.com.br?subject=Alcance%20%E2%80%94%20demonstra%C3%A7%C3%A3o"
+              >Agendar uma demonstração</a
+            >
+            <a class="botao-secundario" href="#telas">Rever as telas</a>
+          </div>
+          <p class="nota-roadmap">
+            Em seguida vem o <strong>Lastro</strong>, módulo financeiro acoplável — contratos,
+            parcelas, cobrança e inadimplência. Produto separado, com banco próprio: nenhum dado
+            financeiro aparece em tela pedagógica, e inadimplência nunca vira sanção ao aluno.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape__interior">
+        <picture>
+          <source srcset="logo-escuro.svg" media="(prefers-color-scheme: dark)" />
+          <img src="logo-claro.svg" alt="Alcance" width="268" height="64" />
+        </picture>
+        <p>Cada objetivo, cada aluno, cada dia.</p>
+      </div>
+      <p class="rodape__notas interior">
+        Capturas geradas automaticamente a partir de uma instância de demonstração, com dados
+        fictícios. Tipografia Figtree, servida junto com a página sob a licença SIL Open Font.
+        Esta página não usa cookies, rastreadores nem requisições a terceiros.
+      </p>
+    </footer>
+
+    <!-- ------------------------------------------------------------ visor -->
+    <dialog class="visor" id="visor" aria-label="Tela ampliada">
+      <div class="visor__topo">
+        <div class="visor__titulo">
+          <strong id="visor-titulo">—</strong>
+          <span id="visor-descricao">—</span>
+        </div>
+        <div class="visor__botoes">
+          <button type="button" id="visor-anterior" aria-label="Tela anterior">←</button>
+          <span class="visor__contagem" id="visor-contagem">1 / 1</span>
+          <button type="button" id="visor-proxima" aria-label="Próxima tela">→</button>
+          <button type="button" id="visor-fechar" aria-label="Fechar">✕</button>
+        </div>
+      </div>
+      <div class="visor__palco">
+        <img id="visor-imagem" src="" alt="" />
+      </div>
+    </dialog>
+
+    <script src="visor.js"></script>
+  </body>
+</html>
