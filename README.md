@@ -15,7 +15,7 @@ a página, como no próprio sistema.
 | `index.html` | A página inteira |
 | `estilo.css` | Paleta e layout, a partir dos tokens de design do Alcance |
 | `visor.js` | Visualizador das telas (`<dialog>`, setas do teclado) |
-| `img/telas/` | 22 telas em 1024 px de largura |
+| `img/telas/` | 20 telas em 1024 px de largura |
 | `img/miniaturas/` | As mesmas recortadas em 4:3, carregadas sob demanda |
 | `fontes/` | Figtree variável (latin e latin-ext), sob a licença SIL Open Font |
 | `logo-*.svg`, `simbolo-*.svg` | Marca nos temas claro e escuro |
@@ -36,8 +36,8 @@ O deploy na VPS está em [DEPLOY.md](DEPLOY.md).
 
 | | |
 |---|---|
-| Primeira visita | ~370 KB (HTML, CSS, fontes e 22 miniaturas) |
-| Telas ampliadas | ~2,2 MB, só quando alguém abre o visor |
+| Primeira visita | ~330 KB (HTML, CSS, fontes e 20 miniaturas) |
+| Telas ampliadas | ~2,1 MB, só quando alguém abre o visor |
 
 ## De onde vêm as telas
 
@@ -63,15 +63,25 @@ recaptura substitui as imagens sem mexer no HTML.
 | --- | --- |
 | Chamada e conteúdo | chamada do dia, falta justificada, grade mensal, conteúdo diário, painel de pendências, grade horária |
 | Objetivos e avaliação | objetivos da disciplina, objetivo a partir do conteúdo, grade de avaliação, encerramento do bimestre |
-| Evidências | anexos no objetivo, arquivos da turma |
 | Resultado e análise | quadro de médias, boletim individual, alertas pedagógicos, painel de performance |
 | Contraturno | atividades, presença do encontro |
 | Escola, turmas e critérios | parâmetros de cálculo, turmas e vínculos, calendário da turma, amostra dos estados |
 
-As telas do mapa de calor (G3) e da cobertura por disciplina (G6) ficaram de
-fora de propósito: as capturas correspondentes em `docs/telas/m5/` mostram a
-aba errada. A causa está descrita no repositório do produto, em
-`docs/engenharia/ferramenta-de-telas.md`.
+### Telas deixadas de fora de propósito
+
+Quatro capturas de `docs/telas/` não mostram o que a legenda delas promete,
+por falha silenciosa da ferramenta que as gera, e por isso não entram aqui:
+
+| Captura | O que ela mostra de fato |
+| --- | --- |
+| `m5/04-mapa-calor-g3` | a aba "Grade de avaliação", não o mapa de calor |
+| `m5/05-cobertura-g6` | a mesma aba "Grade de avaliação" |
+| `m4/01-objetivos-com-galeria` | a lista de objetivos, sem galeria nenhuma |
+| `m4/03-arquivos-turma` | a página de arquivos vazia, sem nenhum anexo |
+
+O diagnóstico e a correção estão no repositório do produto, em
+`docs/engenharia/ferramenta-de-telas.md`. Assim que as capturas forem
+regeradas, basta converter e acrescentar as telas aqui.
 
 ## Acessibilidade
 
