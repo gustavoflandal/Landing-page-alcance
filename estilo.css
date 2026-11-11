@@ -588,6 +588,8 @@ p {
 }
 
 .tela {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background: var(--surface-200);
@@ -609,16 +611,18 @@ p {
 }
 
 .tela img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: top center;
+  height: auto; /* 512 × 384: a proporção exata do visor 1024 × 768 da captura.
+                   Nada de object-fit: recortar a lateral de uma tela de sistema
+                   corta justamente a coluna de ações, que é o que se quer ver. */
   background: var(--surface-300);
   border-bottom: 1px solid var(--border-100);
 }
 
 .tela figcaption,
 .tela__texto {
+  flex: 1;
   padding: var(--space-3) var(--space-4) var(--space-4);
 }
 
